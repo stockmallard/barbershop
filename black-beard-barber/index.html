@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Optimization -->
+    <title>Black Beard Barber Shop — Agendamento Online Premium</title>
+    <meta name="description" content="Experimente o atendimento exclusivo da Black Beard Barber em Aracaju. Faça seu agendamento online de forma rápida e prática e garanta um visual impecável.">
+    <meta name="keywords" content="barbearia, aracaju, corte de cabelo, barba, agendamento online, black beard, premium">
+    <meta name="author" content="StockMallard">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+    <header id="header">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <span class="developer-tag">desenvolvido por <span>StockMallard</span></span>
+                <a href="#inicio" class="brand-name">BLACK BEARD<span>.</span></a>
+            </div>
+            
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#equipe" class="nav-link">Equipe</a>
+                <a href="#sobre" class="nav-link">História</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#localizacao" class="nav-link">Contato</a>
+                <div class="nav-cta">
+                    <a href="#agendamento" class="btn btn-outline">AGENDAR AGORA</a>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#equipe" class="nav-link">Equipe</a>
+        <a href="#sobre" class="nav-link">História</a>
+        <a href="#galeria" class="nav-link">Galeria</a>
+        <a href="#localizacao" class="nav-link">Contato</a>
+        <a href="#agendamento" class="btn btn-primary" style="margin-top: 1rem; width: 100%;">Agendar Horário</a>
+    </div>
+
+    <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+    <section class="hero" id="inicio">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Experiência Exclusiva</span>
+                <h1 class="hero-title">Black Beard <span>Barber Shop</span></h1>
+                <p class="hero-subtitle">"Seu estilo começa aqui."</p>
+                <div class="hero-actions">
+                    <a href="#agendamento" class="btn btn-primary">AGENDAR HORÁRIO</a>
+                    <a href="#servicos" class="btn btn-secondary">CONHECER SERVIÇOS</a>
+                </div>
+            </div>
+            
+            <div class="hero-featured-card">
+                <h3>Agendamento Expresso</h3>
+                <p>Escolha seu serviço preferido, o profissional de confiança e marque seu horário em menos de 1 minuto diretamente pelo celular.</p>
+                <div class="quick-info">
+                    <div class="quick-info-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Atendimento com hora marcada</span>
+                    </div>
+                    <div class="quick-info-item">
+                        <i class="fa-solid fa-beer-mug-empty"></i>
+                        <span>Cerveja gelada de boas-vindas</span>
+                    </div>
+                    <div class="quick-info-item">
+                        <i class="fa-solid fa-square-parking"></i>
+                        <span>Estacionamento gratuito no local</span>
+                    </div>
+                </div>
+                <a href="#agendamento" class="btn btn-outline" style="width: 100%;">Reservar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== */ -->
+    <section class="services-section" id="servicos">
+        <div class="section-title">
+            <h2>Tabela de Serviços <span>Estilo & Cuidado</span></h2>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Card 1 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+                    <h3 class="service-name">Corte Masculino</h3>
+                    <p class="service-description">Corte tradicional, degrade moderno ou social. Lavagem inclusa com produtos especiais para seu cabelo.</p>
+                </div>
+                <div class="service-price-btn">
+                    <span class="service-price">R$ 35,00</span>
+                    <button class="btn btn-outline quick-book" data-service="corte">AGENDAR</button>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon"><i class="fa-solid fa-mustache"></i></div>
+                    <h3 class="service-name">Barba</h3>
+                    <p class="service-description">Barba feita na navalha com toalha quente, óleo hidratante premium e massagem facial relaxante.</p>
+                </div>
+                <div class="service-price-btn">
+                    <span class="service-price">R$ 25,00</span>
+                    <button class="btn btn-outline quick-book" data-service="barba">AGENDAR</button>
+                </div>
+            </div>
+            
+            <!-- Card 3 (Highlight Combo) -->
+            <div class="service-card highlighted">
+                <span class="service-badge">Recomendado</span>
+                <div>
+                    <div class="service-icon"><i class="fa-solid fa-fire"></i></div>
+                    <h3 class="service-name">Corte + Barba</h3>
+                    <p class="service-description">O combo completo de estilo. Corte alinhado mais barba terapia clássica na navalha com toalha quente.</p>
+                </div>
+                <div class="service-price-btn">
+                    <span class="service-price">R$ 55,00</span>
+                    <button class="btn btn-primary quick-book" data-service="corte-barba">AGENDAR</button>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="service-name">Sobrancelha</h3>
+                    <p class="service-description">Design e alinhamento de sobrancelha na navalha ou pinça para complementar sua expressão facial.</p>
+                </div>
+                <div class="service-price-btn">
+                    <span class="service-price">R$ 15,00</span>
+                    <button class="btn btn-outline quick-book" data-service="sobrancelha">AGENDAR</button>
+                </div>
+            </div>
+            
+            <!-- Card 5 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+                    <h3 class="service-name">Combo Imperial</h3>
+                    <p class="service-description">A experiência completa do homem moderno: Corte + Barba premium + Design de Sobrancelha alinhado.</p>
+                </div>
+                <div class="service-price-btn">
+                    <span class="service-price">R$ 65,00</span>
+                    <button class="btn btn-outline quick-book" data-service="combo-premium">AGENDAR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       BARBERS / TEAM SECTION
+       ========================================================================== -->
+    <section class="team-section" id="equipe">
+        <div class="section-title">
+            <h2>Nossa Equipe <span>Mestres da Tesoura</span></h2>
+        </div>
+        
+        <div class="team-grid">
+            <!-- Joao -->
+            <div class="team-card">
+                <div class="team-card-image">
+                    <img src="assets/barber_joao.jpg" alt="João Silva - Black Beard">
+                    <div class="team-card-overlay">
+                        <div class="team-card-info">
+                            <h3>João Silva</h3>
+                            <p>Especialista em Cortes Modernos</p>
+                            <div class="team-card-socials">
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Lucas -->
+            <div class="team-card">
+                <div class="team-card-image">
+                    <img src="assets/barber_lucas.jpg" alt="Lucas Santos - Black Beard">
+                    <div class="team-card-overlay">
+                        <div class="team-card-info">
+                            <h3>Lucas Santos</h3>
+                            <p>Especialista em Barba</p>
+                            <div class="team-card-socials">
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Matheus -->
+            <div class="team-card">
+                <div class="team-card-image">
+                    <img src="assets/barber_matheus.jpg" alt="Matheus Oliveira - Black Beard">
+                    <div class="team-card-overlay">
+                        <div class="team-card-info">
+                            <h3>Matheus Oliveira</h3>
+                            <p>Especialista em Degradê</p>
+                            <div class="team-card-socials">
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT / STORY SECTION
+       ========================================================================== -->
+    <section class="about-section" id="sobre">
+        <div class="about-container">
+            <div class="about-content">
+                <span class="about-tag">Nossa História</span>
+                <h3>Tradição e Modernidade em um só espaço</h3>
+                <p>Fundada com a proposta de elevar o conceito de cuidados masculinos, a <strong>Black Beard Barber</strong> une a atmosfera nostálgica das barbearias vintage com as técnicas e tendências mais avançadas da atualidade.</p>
+                <p>Nosso ambiente foi meticulosamente planejado para proporcionar não apenas um serviço de alto nível, mas um verdadeiro refúgio para o homem moderno. Aqui, cada detalhe importa — desde a poltrona de couro reclinável até o atendimento personalizado de nossos profissionais, sempre acompanhado de uma boa conversa e uma bebida gelada.</p>
+                <div class="about-signature">
+                    <div class="sig-line"></div>
+                    <span class="sig-name">Black Beard Staff</span>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SCHEDULING ENGINE (MODERN WIZARD)
+       ========================================================================== -->
+    <section class="booking-section" id="agendamento">
+        <div class="section-title">
+            <h2>Agendamento Online <span>Escolha seu Horário</span></h2>
+        </div>
+        
+        <div class="booking-container">
+            <!-- Stepper Header -->
+            <div class="booking-stepper">
+                <div class="step-indicator active" data-step="1">
+                    <span class="step-num">1</span>
+                    <span>Serviço</span>
+                </div>
+                <div class="step-indicator" data-step="2">
+                    <span class="step-num">2</span>
+                    <span>Barbeiro</span>
+                </div>
+                <div class="step-indicator" data-step="3">
+                    <span class="step-num">3</span>
+                    <span>Data & Hora</span>
+                </div>
+                <div class="step-indicator" data-step="4">
+                    <span class="step-num">4</span>
+                    <span>Seus Dados</span>
+                </div>
+                <div class="step-indicator" data-step="5">
+                    <span class="step-num">5</span>
+                    <span>Confirmar</span>
+                </div>
+            </div>
+            
+            <!-- Booking Screens -->
+            <div class="booking-screens">
+                
+                <!-- STEP 1: SELECT SERVICE -->
+                <div class="booking-step-screen active" id="step-1">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem; text-align: center; text-transform: uppercase;">Selecione o Serviço</h3>
+                    <div class="booking-services-list">
+                        <div class="booking-service-item" data-service="corte">
+                            <div class="service-item-left">
+                                <div class="service-item-radio"></div>
+                                <div class="service-item-info">
+                                    <h4>✂️ Corte Masculino</h4>
+                                    <span>Tempo estimado: 40min</span>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <span class="price">R$ 35,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-service-item" data-service="barba">
+                            <div class="service-item-left">
+                                <div class="service-item-radio"></div>
+                                <div class="service-item-info">
+                                    <h4>🧔 Barba Terapia</h4>
+                                    <span>Tempo estimado: 30min</span>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <span class="price">R$ 25,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-service-item" data-service="corte-barba">
+                            <div class="service-item-left">
+                                <div class="service-item-radio"></div>
+                                <div class="service-item-info">
+                                    <h4>🔥 Corte + Barba</h4>
+                                    <span>Tempo estimado: 1h 10min</span>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <span class="price">R$ 55,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-service-item" data-service="sobrancelha">
+                            <div class="service-item-left">
+                                <div class="service-item-radio"></div>
+                                <div class="service-item-info">
+                                    <h4>💈 Sobrancelha</h4>
+                                    <span>Tempo estimado: 15min</span>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <span class="price">R$ 15,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-service-item" data-service="combo-premium">
+                            <div class="service-item-left">
+                                <div class="service-item-radio"></div>
+                                <div class="service-item-info">
+                                    <h4>👑 Combo Imperial (Completo)</h4>
+                                    <span>Tempo estimado: 1h 25min</span>
+                                </div>
+                            </div>
+                            <div class="service-item-right">
+                                <span class="price">R$ 65,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP 2: SELECT BARBER -->
+                <div class="booking-step-screen" id="step-2">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem; text-align: center; text-transform: uppercase;">Escolha seu Barbeiro</h3>
+                    <div class="booking-barbers-list">
+                        <!-- Joao -->
+                        <div class="booking-barber-card" data-barber="joao">
+                            <div class="barber-card-img" style="background-image: url('assets/barber_joao.jpg');"></div>
+                            <div class="barber-card-info">
+                                <h4>João Silva</h4>
+                                <p>Cortes Modernos</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Lucas -->
+                        <div class="booking-barber-card" data-barber="lucas">
+                            <div class="barber-card-img" style="background-image: url('assets/barber_lucas.jpg');"></div>
+                            <div class="barber-card-info">
+                                <h4>Lucas Santos</h4>
+                                <p>Especialista em Barba</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Matheus -->
+                        <div class="booking-barber-card" data-barber="matheus">
+                            <div class="barber-card-img" style="background-image: url('assets/barber_matheus.jpg');"></div>
+                            <div class="barber-card-info">
+                                <h4>Matheus Oliveira</h4>
+                                <p>Degradê / Fade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP 3: DATE & TIME -->
+                <div class="booking-step-screen" id="step-3">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem; text-align: center; text-transform: uppercase;">Escolha o Dia e Horário</h3>
+                    <div class="date-time-container">
+                        <!-- Date Cards Slider -->
+                        <div class="date-selector-wrapper">
+                            <span class="date-selector-title">Escolha o Dia:</span>
+                            <div class="booking-days-list" id="booking-days-list">
+                                <!-- Days injected by JS dynamically -->
+                            </div>
+                        </div>
+                        
+                        <!-- Time Slots Grid -->
+                        <div class="time-selector-wrapper">
+                            <span class="date-selector-title">Horários Disponíveis:</span>
+                            <div class="time-slots-grid" id="time-slots-grid">
+                                <!-- Times injected by JS dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP 4: CLIENT INFO -->
+                <div class="booking-step-screen" id="step-4">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 1.5rem; text-align: center; text-transform: uppercase;">Dados de Contato</h3>
+                    <div class="info-form-wrapper">
+                        <div class="form-group">
+                            <label for="client-name">Seu Nome:</label>
+                            <input type="text" id="client-name" placeholder="Ex: João Silva" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="client-whatsapp">WhatsApp:</label>
+                            <input type="tel" id="client-whatsapp" placeholder="Ex: (79) 99999-9999" required autocomplete="tel">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEP 5: RECEIPT & CONFIRMATION -->
+                <div class="booking-step-screen" id="step-5">
+                    <!-- Receipt Design -->
+                    <div class="receipt-wrapper">
+                        <div class="receipt-header">
+                            <h3>Resumo da Reserva</h3>
+                            <p>Black Beard Barber Shop</p>
+                        </div>
+                        
+                        <div class="receipt-body">
+                            <div class="receipt-row">
+                                <span class="receipt-label">Serviço:</span>
+                                <span class="receipt-value" id="receipt-service">Corte + Barba</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Barbeiro:</span>
+                                <span class="receipt-value" id="receipt-barber">Lucas</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Data:</span>
+                                <span class="receipt-value" id="receipt-date">10/08/2026</span>
+                            </div>
+                            <!-- Highlighted Time slot (crucial requirement) -->
+                            <div class="receipt-row highlighted-row">
+                                <span class="receipt-label">Horário Escolhido:</span>
+                                <span class="receipt-value" id="receipt-time">15:30</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Cliente:</span>
+                                <span class="receipt-value" id="receipt-client">Marcos</span>
+                            </div>
+                            <div class="receipt-row total-row">
+                                <span class="receipt-label">Valor Total:</span>
+                                <span class="receipt-value" id="receipt-price">R$ 55,00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="receipt-action">
+                            <button id="btn-whatsapp-confirm" class="btn btn-whatsapp-confirm">
+                                <i class="fa-brands fa-whatsapp"></i> CONFIRMAR PELO WHATSAPP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Wizard Footer Buttons -->
+            <div class="booking-footer">
+                <button class="btn btn-secondary" id="btn-prev" style="visibility: hidden;">
+                    <i class="fa-solid fa-chevron-left"></i> Voltar
+                </button>
+                <button class="btn btn-primary" id="btn-next" disabled>
+                    Próximo <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       GALLERY SECTION
+       ========================================================================== -->
+    <section class="gallery-section" id="galeria">
+        <div class="section-title">
+            <h2>Galeria de Estilos <span>Nosso Ambiente & Cortes</span></h2>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Item 1 -->
+            <div class="gallery-item">
+                <img src="assets/gallery_cut.jpg" alt="Detalhe do Corte">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-scissors"></i>
+                    <span>Cortes Modernos</span>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="gallery-item">
+                <img src="assets/about_barbershop.jpg" alt="Nosso Espaço Premium">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-couch"></i>
+                    <span>Ambiente Premium</span>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="gallery-item">
+                <img src="assets/hero_bg.jpg" alt="Equipamentos Profissionais">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-soap"></i>
+                    <span>Grooming Masculino</span>
+                </div>
+            </div>
+            
+            <!-- Item 4 -->
+            <div class="gallery-item">
+                <img src="assets/barber_joao.jpg" alt="Barbeiro João Silva">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Equipe Qualificada</span>
+                </div>
+            </div>
+            
+            <!-- Item 5 -->
+            <div class="gallery-item">
+                <img src="assets/barber_lucas.jpg" alt="Barbeiro Lucas Santos">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-mustache"></i>
+                    <span>Barba Clássica</span>
+                </div>
+            </div>
+            
+            <!-- Item 6 -->
+            <div class="gallery-item">
+                <img src="assets/barber_matheus.jpg" alt="Barbeiro Matheus Oliveira">
+                <div class="gallery-overlay">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Fade / Degradê</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       REVIEWS / TESTIMONIALS SECTION
+       ========================================================================== -->
+    <section class="reviews-section" id="avaliacoes">
+        <div class="section-title">
+            <h2>O Que Dizem <span>Depoimentos Reais</span></h2>
+        </div>
+        
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                <div class="stars-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Atendimento excelente e corte impecável. Com certeza voltarei."</p>
+                <div class="review-author">
+                    <div class="author-avatar">R</div>
+                    <span class="author-name">Rafael</span>
+                </div>
+            </div>
+            
+            <!-- Review 2 -->
+            <div class="review-card">
+                <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                <div class="stars-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Ambiente top e barbeiros muito profissionais."</p>
+                <div class="review-author">
+                    <div class="author-avatar">G</div>
+                    <span class="author-name">Gabriel</span>
+                </div>
+            </div>
+            
+            <!-- Review 3 -->
+            <div class="review-card">
+                <i class="fa-solid fa-quote-right review-quote-icon"></i>
+                <div class="stars-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">"Finalmente encontrei uma barbearia que entende exatamente o corte que eu quero."</p>
+                <div class="review-author">
+                    <div class="author-avatar">P</div>
+                    <span class="author-name">Pedro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       LOCATION & HOURS SECTION
+       ========================================================================== -->
+    <section class="location-section" id="localizacao">
+        <div class="location-container">
+            <!-- Left: Location info & stylized map visual -->
+            <div class="location-info">
+                <div class="location-details">
+                    <h3><i class="fa-solid fa-map-location-dot"></i> Onde Estamos</h3>
+                    <div class="address-block">
+                        <span>Av. Principal, 250</span>
+                        <span>Centro — Aracaju/SE</span>
+                    </div>
+                </div>
+                
+                <!-- CSS stylized GPS/Map Vector Block (looks extremely premium and loads instantly) -->
+                <div class="map-visual-placeholder">
+                    <!-- Stylized retro grid overlay in CSS to simulate map roads -->
+                    <div style="position: absolute; width: 200%; height: 200%; background: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 30px 30px; transform: rotate(15deg); z-index: 1;"></div>
+                    <!-- Stylized roads -->
+                    <div style="position: absolute; width: 6px; height: 100%; background: rgba(212,175,55,0.08); left: 40%; z-index: 1;"></div>
+                    <div style="position: absolute; width: 100%; height: 6px; background: rgba(212,175,55,0.08); top: 50%; z-index: 1;"></div>
+                    <div style="position: absolute; width: 6px; height: 100%; background: rgba(212,175,55,0.08); left: 65%; transform: rotate(45deg); z-index: 1;"></div>
+                    <i class="fa-solid fa-location-dot map-pin"></i>
+                    <span class="map-label">Black Beard Barber</span>
+                </div>
+            </div>
+            
+            <!-- Right: Working Hours -->
+            <div class="hours-wrapper">
+                <h3><i class="fa-regular fa-calendar-days"></i> Horário de Funcionamento</h3>
+                <div class="hours-table">
+                    <div class="hours-row">
+                        <span class="day-name">Segunda a Sexta</span>
+                        <span class="day-time">08:00 — 19:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day-name">Sábado</span>
+                        <span class="day-time">08:00 — 17:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="day-name">Domingo</span>
+                        <span class="day-time closed">Fechado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer>
+        <div class="footer-container">
+            <!-- Col 1: About / Logo -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span class="brand">BLACK BEARD<span>.</span></span>
+                    <span class="slogan">"Seu estilo começa aqui."</span>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">A barbearia de Aracaju que eleva sua autoestima com estilo premium e atendimento impecável.</p>
+            </div>
+            
+            <!-- Col 2: Navigation Links -->
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <div class="footer-links">
+                    <a href="#inicio">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#equipe">Nossa Equipe</a>
+                    <a href="#sobre">História</a>
+                    <a href="#galeria">Galeria</a>
+                </div>
+            </div>
+            
+            <!-- Col 3: Contact Info -->
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(79) 9824-8239</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contato@blackbeard.com</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Centro, Aracaju/SE</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Col 4: Social media & CTA -->
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://wa.me/557998248239" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#localizacao" aria-label="Localização"><i class="fa-solid fa-location-dot"></i></a>
+                </div>
+                <a href="#agendamento" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.5rem 1rem; width: fit-content; margin-top: 10px;">Marcar Horário</a>
+            </div>
+        </div>
+        
+        <!-- Bottom bar with copyright and developer credit -->
+        <div class="footer-bottom">
+            <div class="footer-copy">
+                &copy; 2026 Black Beard Barber. Todos os direitos reservados.
+            </div>
+            <!-- Elegant development brand tag -->
+            <div class="footer-credit">
+                Sistema desenvolvido por <a href="https://stockmallard.com" target="_blank">StockMallard</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/557998248239?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Black%20Beard." class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
